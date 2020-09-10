@@ -1,1 +1,12 @@
+String name = "Aleksander";
+int age = 23;
+boolean happy = true;
+
+
+print ("Hi, my name is "+ name +"\nI am "+age+" years old");
+if (happy == true) {
+  println("\nI clap my hands");
+} else {
+  print("\nI dont clap my hands");
+}
 
