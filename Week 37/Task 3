@@ -1,0 +1,48 @@
+color red = color(255,0,0,255);
+color red = color(255, 0, 0, 255);
+color yellow = color (255, 255, 0, 255);
+color green = color (0, 255, 0, 255);
+color background = color (0, 0, 0, 191);
+color off = color (0, 0, 0, 255);
+void setup() {
+  size(200, 600);
+
+  //background
+  fill(background);
+  rect(0, 0, 200, 600, 15);
+
+  //lights off
+  fill(off);
+  ellipse(100, 500, 180, 180);
+  ellipse(100, 100, 180, 180);
+  ellipse(100, 300, 180, 180);
+}
+void draw() {
+
+  if (keyPressed) {
+    if (key =='a' || key == 'A') {
+      fill(red);
+      ellipse(100, 100, 180, 180);
+
+      // green/yellow off
+      fill(off);
+      ellipse(100, 500, 181, 181);
+      ellipse(100, 300, 180, 180);
+    } else if (key =='s' || key == 'S') {
+      fill(yellow);
+      ellipse(100, 300, 180, 180);
+      //red/green off
+      fill(off);
+      ellipse(100, 100, 181, 181);
+      ellipse(100, 500, 181, 181);
+    } else if (key =='d' || key == 'D') {
+      fill(green);
+      ellipse(100, 500, 180, 180);
+
+      //red & yellow off
+      fill(off);
+      ellipse(100, 100, 181, 181);
+      ellipse(100, 300, 181, 181);
+    }
+  }
+}
