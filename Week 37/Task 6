@@ -1,0 +1,35 @@
+/* Task 6.a 
+int sum = 10;
+int a = 10;
+int b = 11;
+
+if (a+b==sum) {
+  println("Success!");
+}else if (a == sum) {
+  println("Success!");
+} else if (b == sum) {
+  println("Success!");
+} else {
+  println("Failure!");
+}
+*/
+
+//task 6.b
+int x = 9;
+int y = 21;
+int z = 0;
+int sum = 30;
+
+if (x != 10 && x != 20 && x != 30 && x+y+z==sum){
+  if (y != 10 && y != 20 && y != 30){
+    if (z != 10 && z != 20 && z !=30 ){
+    println("Success!");
+    }else {
+      println("Failure!");
+    }
+  }else {
+  println("Failure!");
+  }
+}else {
+  println("Failure!");
+}
