@@ -24,14 +24,14 @@ void draw() {
       fill(red);
       ellipse(100, 100, 180, 180);
 
-      // green/yellow off
+      // green & yellow off
       fill(off);
       ellipse(100, 500, 181, 181);
       ellipse(100, 300, 180, 180);
     } else if (key =='s' || key == 'S') {
       fill(yellow);
       ellipse(100, 300, 180, 180);
-      //red/green off
+      //red & green off
       fill(off);
       ellipse(100, 100, 181, 181);
       ellipse(100, 500, 181, 181);
