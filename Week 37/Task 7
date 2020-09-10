@@ -1,0 +1,23 @@
+/*task 7a
+ 
+for (int i = 20; i>-1; i--) {
+   if (i==6) {
+     println("six");
+    }else if (i==10){
+     println("HALF!");
+    }else
+      println(i);
+ }
+ */
+
+//task 7b
+int startValue = -48;
+for (int i = startValue; i<1; i++) {
+  if (i == startValue/2) {
+    println("HALF!");
+  } else if (i==6) { 
+    println("six");
+  } else {
+    println(i);
+  }
+}
