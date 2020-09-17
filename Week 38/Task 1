@@ -1,0 +1,19 @@
+void setup() {
+
+  printEmptyLine();
+  printString("Ape");
+  dataPrinter(23, "Aleksander");
+}
+
+void printEmptyLine () {
+  println();
+}
+
+void printString (String input) {
+  println(input);
+}
+
+void dataPrinter (int age, String name){
+  println("My name is " + name + ", I am " + age + " years old");
+
+}
