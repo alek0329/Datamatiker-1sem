@@ -1,0 +1,76 @@
+/*                2 . A
+ 
+ boolean happy = true;
+ 
+ void setup() {
+ if (iAmHappy())
+ {
+ println("I clap my hands");
+ }
+ else
+ {
+ println("I don't clap my hands"); 
+ }
+ }
+ 
+ 
+ boolean iAmHappy()
+ {
+ // fill out what is missing here: 
+ return(happy);
+ 
+ }
+ 
+ */
+
+/*               2 . B
+ 
+ void setup () {
+ 
+ println(sumCalc(20,30));
+ }
+ 
+ int sumCalc(int a, int b){
+ int sum=a+b;
+ 
+ return (sum);
+ }
+ */
+
+
+/*               2  .  C
+ void setup () {
+ 
+ println (upperCaser("hest"));
+ }
+ 
+ 
+ String upperCaser(String lowerCase){
+ 
+ String newLine = lowerCase.toUpperCase();  
+ 
+ return (newLine);
+ }
+ 
+ 
+ */
+
+void setup () {
+  String tester = "tester";
+  capLetter(tester);
+
+  if (capLetter(tester)==true) {
+    println("true");
+  } else {
+    println("false");
+  }
+}
+
+boolean capLetter (String test) {
+  if (Character.isUpperCase(test.charAt(0))) {
+    return true;
+  } else {
+
+    return false;
+  }
+}
