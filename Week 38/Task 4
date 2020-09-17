@@ -1,0 +1,41 @@
+int[] numList = {1, 2, 3, 4, 5, 8, 7, 6, 5, 8};
+String[] stringList = {"Hest", "Ko", "Gris", "Abe", "Giraf", "Tiger", "Zebra", "Hamster", "Kat", "Ged"};
+boolean[] trueList = {true, true, false, false, false, true, true, false, true};
+
+void setup() {
+
+  stringPrinter();
+  println(sumPrinter());
+  println(avgPrinter());
+}
+
+
+void stringPrinter() {
+  for (int i = 0; i < stringList.length; i++) {
+    if (i>11) {
+      continue;
+    }
+
+    println (stringList[i]);
+  }
+}
+
+int sumPrinter() {
+  int sum = 0;
+  for (int i = 0; i < numList.length; i++) {
+    sum = sum+numList[i];
+  }
+  return sum;
+}
+
+int avgPrinter() {
+  int avgNum = 0;
+    for (int i = 0; i < numList.length; i++) {
+    avgNum = avgNum+numList[i];
+  }
+  avgNum = avgNum/numList.length;
+
+  return (avgNum);
+}
+
+
