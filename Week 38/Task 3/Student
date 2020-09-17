@@ -1,0 +1,14 @@
+class Student {
+  String name;
+  int age;
+  boolean isFemale;
+  char datamatikerTeam;
+
+
+  Student(int tmpAge, String tmpName, boolean tmpIsFemale, char tmpDatamatikerTeam) {
+    age = tmpAge;
+    name = tmpName;
+    isFemale = tmpIsFemale;
+    datamatikerTeam = tmpDatamatikerTeam;
+  }
+}
