@@ -1,0 +1,33 @@
+int[][] board = new int[8][8];
+int x = 40;
+int y = 40;
+void setup() {
+  size(320, 321);
+
+  for (int i = 0; i < board.length - 1; i++) {
+    println("next row");
+    for (int j = 0; j < board.length-1; j++) {
+      if (board[i][j]==0) {
+        board[i][j+1]=1;
+        board[i+1][j]=1;
+      } else {
+        board [i][j+1]=0;
+      }
+      println(board[i][j]);
+    }
+  }
+}
+
+void draw() {
+  for (int i = 0; i < board.length; i++) {
+    for (int j = 0; j < board.length; j++) {
+      if (board[i][j]==0) {
+        fill(0);
+        rect(x*i, y*j, 40, 40);
+      } else {
+        fill(255);
+        rect(x*i, y*j, 40, 40);
+      }
+    }
+  }
+}
