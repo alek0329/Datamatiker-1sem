@@ -1,0 +1,53 @@
+int[] arr = {8, 9, 1, 5, 11, 13, 7, 4, 6, 3, 12, 10, 2};
+
+void setup() {
+  arraySorter(arr);
+  arrayPrinter(arr);
+}
+
+void arraySorter(int arr[]) {
+  for (int i = 0; i <  arr.length - 1; i++) {
+    for (int j = 0; j < arr.length - 1; j++) {
+      if (arr[j] > arr[j+1]) {
+        int temp = arr[j];
+        arr[j]=arr[j+1];
+        arr[j+1] = temp;
+      }
+    }
+  }
+}
+
+void arrayPrinter(int arr[]) {
+  for (int i = 0; i < arr.length; i++) {
+    println(arr[i]);
+  }
+}
+
+
+//int[] arr = {8, 9, 1, 5, 11, 13, 7, 4, 6, 3, 12, 10, 2};
+
+//void setup() {
+//  arraySorter(arr);
+//  arrayPrinter(arr);
+//}
+
+//void arraySorter(int arr[]) {
+//  boolean sorted = false;
+//  while (!sorted) {
+//    sorted = true;
+//    for (int j = 0; j < arr.length - 1; j++) {
+//      if (arr[j] > arr[j+1]) {
+//        int temp = arr[j];
+//        arr[j]=arr[j+1];
+//        arr[j+1] = temp;
+//        sorted = false;
+//      }
+//    }
+//  }
+//}
+
+//void arrayPrinter(int arr[]) {
+//  for (int i = 0; i < arr.length; i++) {
+//    println(arr[i]);
+//  }
+//}
