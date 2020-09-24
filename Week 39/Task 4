@@ -1,0 +1,51 @@
+import java.util.Random;
+int d = 4;
+int [] arr= {1, 1, 1, 2, 2, 3, 3, 3, 4, 5, 5, 5, 6, 6, 7, 8, 8, 9, 9, 10};
+
+/* 4a
+ void setup() {
+ for (int i = 0; i < 101; i++) {
+ if (i % d == 0) {
+ println(i);
+ }
+ }
+ }
+ */
+
+/* 4b & 4c
+ void setup() {
+ randEle();
+ }
+ 
+ int randEle(){
+ int rand = new Random().nextInt(arr.length);
+ print (arr[rand]);
+ return arr[rand];
+ }
+ */
+
+/* 4.d
+void setup() {
+  numRec (10);
+}
+
+void numRec (int num) {
+    print(num);
+  if (num > 0) {
+    numRec(num-1);
+    
+  }
+}
+*/
+// 4.e
+void setup() {
+  fibo(1,1);
+}
+
+void fibo(int a, int b) {
+  int sum=a+b;
+ println(a+"\t"+b+"\t="+sum);
+  if (a < 10000 || b < 10000) {
+    fibo(a=b,b=sum);
+  }
+}
